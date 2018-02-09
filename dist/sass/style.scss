@@ -5,6 +5,17 @@
     }
 }
 
-.blog-header-logo {
-    font-size: 10%;
+nav.navbar {
+    // padding: .3rem 1rem;
+    a.navbar-brand {
+        // font-size: 1em;
+        font-weight: 700;
+    }
+    a.nav-link {
+        // font-size: .8em;
+    }
+}
+
+.jumbotron {
+    margin-top: 56px;
 }
