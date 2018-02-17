@@ -14,13 +14,14 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    'build/index.html': ['dist/index.pug']
+                    'build/index.html': ['dist/index.pug'],
+                    'build/post.html' : 'dist/post.pug'
                 }
             }
         },
         watch: {
             pug: {
-                files: ['dist/index.pug'],
+                files: ['dist/index.pug', 'dist/post.pug'],
                 tasks: ['pug']
             },
             sass: {
@@ -37,6 +38,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
 
-    grunt.registerTask('build', ['concat', 'sass', 'pug']);
+    grunt.registerTask('build', ['sass', 'pug']);
 
 }

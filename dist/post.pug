@@ -20,25 +20,43 @@ html(lang="en")
                         .dropdown-menu(aria-labelledby="dropdown01")
                             a.dropdown-item(href="#") React JS
                             a.dropdown-item(href="#") Angular
+        .jumbotron
+            .container
+                h1.text-center.page-title Worth A Thousand Words
         .container.wrap
             .row
                 main.site-main.col-md-8(role="main")
                     article.post
                         header.entry-header
-                            h3.entry-title
-                                a(href='post.html', rel='bookmark') Worth A Thousand Words
                             .entry-meta
                                 time.entry-date.published(datetime='2008-10-17T04:33:51+00:00') October 17, 2008
                                 time.updated(datetime='2011-09-09T19:17:14+00:00') September 9, 2011
                         .entry-content
                             p Boat in this 
                                 a(href="#") factory
+                                | is from other planet and il learn it faster 
+                                code= '<script>function(){}</script> '
+                                | If a list needs 50+ of these items, with server-side templating we’d typically get the entire markup back from the Ajax call. 
+                                | Instead, if a template of the markup is available client-side, we can get just the data via Ajax (as a object or an array), then parse the data and generate the final HTML using the template.
+                            h2#why-javascript 
+                                a.ancor(href="#why-javascript" name="barlink") #
+                                | Why JavaScript Templating?
+                                
+                            p JavaScript templating can be useful if you want dynamic content but don’t have server-side templating available. It also can argubly minimize 
+                                | the amount of data that’s returned to the client (e.g. data as an object or JSON instead of the entire markup), making sites faster and servers more responsive by lowering bandwidth and load. Let’s say you have a list, and each list item has the following markup:
+                            ul
+                                li Let’s say you have a lis
+                                li Google, Mountain View, CA
                 aside.col-md-3 
                     section.widget
                         h2.widget-title Top Post
                         ul 
                             li
-                                a(href="post.html") Membuat log di Laravel 5.6
+                                a(href="#") Membuat log di Laravel 5.6
+                            li
+                                a(href="#") Worth A Thousand Words
+                            li
+                                a(href="#") Worth A Thousand Words
 
 
         script(src="js/jquery-3.2.1.slim.min.js")
